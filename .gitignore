@@ -1,0 +1,22 @@
+# compiled output
+/target
+/output
+
+# dependencies
+/node_modules
+/src/js/node_modules
+# IDEs and editors
+/.idea
+.project
+.classpath
+.iml
+
+*.launch
+.settings/
+
+# misc
+npm-debug.log
+
+# System Files
+.DS_Store
+Thumbs.db
