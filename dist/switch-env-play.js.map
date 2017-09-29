@@ -1,0 +1,1 @@
+{"version":3,"file":"switch-env-play.js","sourceRoot":"","sources":["../src/switch-env-play.ts"],"names":[],"mappings":";;AACA,qCAAqC;AACrC,2BAA2B;AAE3B,OAAO;KACN,OAAO,CAAC,OAAO,CAAC;KAChB,KAAK,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;AAErB,IAAI,WAAW,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;AAElC,OAAO,CAAC,GAAG,CAAC,UAAU,GAAC,YAAO,EAAE,CAAC,CAAC"}

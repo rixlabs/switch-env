@@ -1,5 +1,6 @@
 import {UseSetting} from './UseSetting'; 
 import * as program from "commander";
+import {homedir} from 'os';
 
 function list(val: string) {
     return val.split(',');
@@ -16,7 +17,7 @@ console.log("USE --> "+environment);
 
 console.log('use skipparoo: %j', program.skipTools);
 
-
+const homeDir = homedir();
 
 var skipTools: Array<string> = new Array<string>();
 if(program.skipTools != undefined){
@@ -32,12 +33,12 @@ var toolsSettings:Array<Tool> = new Array<Tool>();
 
 toolsSettings.push({
     tool: 'mvn',
-    setting: new UseSetting('C:\\Users\\rica\\.m2\\', 'settings.xml')
+    setting: new UseSetting(`${homeDir}/.m2/`, 'settings.xml')
 });
 
 toolsSettings.push({
     tool: 'npm',
-    setting: new UseSetting('C:\\Users\\rica\\', '.npmrc')
+    setting: new UseSetting(`${homeDir}/`, '.npmrc')
 });
 
 for(var toolSetting of toolsSettings){

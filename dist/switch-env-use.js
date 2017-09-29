@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const UseSetting_1 = require("./UseSetting");
 const program = require("commander");
+const os_1 = require("os");
 function list(val) {
     return val.split(',');
 }
@@ -12,6 +13,7 @@ program
 var environment = program.args[0];
 console.log("USE --> " + environment);
 console.log('use skipparoo: %j', program.skipTools);
+const homeDir = os_1.homedir();
 var skipTools = new Array();
 if (program.skipTools != undefined) {
     skipTools = program.skipTools;
@@ -19,11 +21,11 @@ if (program.skipTools != undefined) {
 var toolsSettings = new Array();
 toolsSettings.push({
     tool: 'mvn',
-    setting: new UseSetting_1.UseSetting('C:\\Users\\rica\\.m2\\', 'settings.xml')
+    setting: new UseSetting_1.UseSetting(`${homeDir}/.m2/`, 'settings.xml')
 });
 toolsSettings.push({
     tool: 'npm',
-    setting: new UseSetting_1.UseSetting('C:\\Users\\rica\\', '.npmrc')
+    setting: new UseSetting_1.UseSetting(`${homeDir}/`, '.npmrc')
 });
 for (var toolSetting of toolsSettings) {
     if (skipTools.indexOf(toolSetting.tool) > -1) {
