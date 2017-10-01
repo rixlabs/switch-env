@@ -50,6 +50,7 @@ for(var toolSetting of toolsSettings){
 }
 
 
-// TODO: implement an array of settings and if one is not there ask if they want to skip it. changeSetting must return an error code if the env setting are not found
+// TODO: implement an array of settings and if one is not there ask if they want to skip it. changeSetting must return
+// an error code if the env setting are not found
 
 
