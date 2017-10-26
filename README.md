@@ -13,3 +13,9 @@ So if you want to call your environment FOO your .npmrc file will be **.npmrc.FO
 - [ ] Add some more tools config
 - [ ] Determin the location of the configs or ask the user
 - [ ] Store the location of the configs in a decent place
+
+## DEV
+To install it locally just
+```
+npm install -g
+```
